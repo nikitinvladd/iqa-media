@@ -1,0 +1,1203 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.header_logo {
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+.mainn{
+  background-image:url(backgrounddemo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.logo {
+user-select: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+color: #FFFFFF;  
+transition: all 0.5s ease;
+}
+.header_text {
+display: flex;
+justify-content: center;
+width: 100%;
+
+
+}
+.text_header {
+    font-family: 'Montserrat', sans-serif;
+    color: #38D1FD;
+    font-weight: 800;
+    font-size: 55px;
+    margin-bottom: 0;
+}
+.header_text_p {
+    display: flex;
+    margin-top: 0;
+}
+.text_p {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+.header_button {
+display: flex;
+justify-content: center;
+width: 100%;
+margin: 0;
+}
+.header_button button {
+display: flex;
+justify-content: center;
+
+}
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 4em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+.third {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.page2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 74vh;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+}
+.page2.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.page2.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+.img_1 {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-image:url(ourphilosophy.png);
+  background-size: cover;
+}
+.philosophy{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  
+}
+.philosophy h1{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.philosophy p{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.maybe {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.header_button1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  }
+  .header_button1 button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+  }
+  .btn1 {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background-color: transparent;
+      border: 2px solid #e74c3c;
+      border-radius: 4em;
+      color: #e74c3c;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 20px;
+      padding: 1.2em 2.8em;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    .btn1:hover, .btn1:focus {
+      color: black;
+      outline: 0;
+    }
+  .third1 {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third1:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  .main_partners {
+    background-color: #f5f7fa;
+}
+.page3 {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img_partners.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.img_partners.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+.img_partners{
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+  opacity: 0;
+  transform: translateX(30%);
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+}
+.medium {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 70vh;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20%);
+}
+.medium.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.medium.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+.page4{
+  display: flex;
+}
+.text_page4 {
+display: flex;
+justify-content: start;
+align-items:center;
+flex-direction: column;
+width:70%;
+}
+.text_page4 p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.img_laptop {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img_laptop img{
+  width: 450px;
+  height: 350px;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+}
+.last{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
+}
+.last_text1{
+  color: #3d3d3d;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.last_text2{
+  color: #3d3d3d;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.last_text3{
+  color: #3d3d3d;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter {
+  font-weight: 400;
+  text-align: center;
+  color: #515151;
+  font-size: 25px;
+}
+.page5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #d1d1d1;
+  opacity: 0;
+  transform: translateX(10px);
+}
+.pag5.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.page5.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+.founder_image {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-image:url(founder.jpg);
+  border-radius: 40px;
+  background-size: cover;
+  margin-right: 30px;
+}
+.about_founder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 30px;
+}
+.ceo {
+  margin: 0;
+}
+.about_founder h1{
+  margin-bottom: 0;
+}
+
+.footer{
+  display: flex;
+  width: 100%;
+  background-image:url(footer.jpg);
+  height: 70vh;
+  border-top: 1px solid #d1d1d1;
+}
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  color: #38D1FD;
+}
+.footer_p{
+  display: flex;
+  color: #fff;
+}
+.number h1{
+  margin-top: 0;
+  color: #fff;
+  font-size: 13px;
+}
+.polityc p {
+  color: white;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer_p{
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: 25px;  
+    }
+    .text_header {
+      font-family: 'Montserrat', sans-serif;
+      color: #38D1FD;
+      font-weight: 800;
+      font-size: 32px;
+      margin: 0;
+  }
+  .text_p {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+}
+.img_1 {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-image:url(ourphilosophy.png);
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 15px;
+
+}
+.philosophy h1{
+  font-size: 25px;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.philosophy{
+  font-size: 15px;
+}
+.philosophy{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+.page5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-color: #f5f7fa;
+  border: 1px solid #d1d1d1;
+}
+.founder_image {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-image:url(founder.jpg);
+  border-radius: 40px;
+  background-size: cover;
+  margin-right: 30px;
+}
+.about_founder{
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 30px;
+}
+}
+@media only screen and (max-width: 768px) {
+  .page5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: #f5f7fa;
+    border: 1px solid #d1d1d1;
+  }
+  .founder_image {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background-image:url(founder.jpg);
+    border-radius: 40px;
+    background-size: cover;
+    margin-right: 30px;
+  }
+  .about_founder{
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-left: 30px;
+  }
+  .last{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-color: #f5f7fa;
+  
+  }
+  .last_text1{
+    color: #3d3d3d;
+    font-size: 15px;
+    width: 33,3%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text2{
+    color: #3d3d3d;
+    width: 33,3%;
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text3{
+    color: #3d3d3d;
+    font-size: 15px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text3 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .value {
+    font-size: 30px;
+    display: block;
+    font-weight: 400;
+    color: #515151;
+  }
+  .text_page4 {
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    flex-direction: column;
+    width:70%;
+    }
+    .text_page4 p {
+      font-size: 12px;
+      margin: 0;
+    }
+    .text_page4 h1 {
+      font-size: 25px;
+    }
+    .img_laptop {
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .img_laptop img{
+      width: 350px;
+      height: 250px;
+      vertical-align: middle;
+      display: inline-block;
+      border: 0;
+    }
+  .btn1 {
+    font-size: 14px;
+    padding: 1em 2.5em;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header_logo {
+    width: 100%;
+  }
+
+  .header_text {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .text_header {
+    font-size: 30px;
+  }
+
+  .header_text_p {
+    margin-left: 0;
+  }
+
+  .header_button {
+    justify-content: center;
+  }
+
+  .header_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    }
+    .img_1 {
+      display: flex;
+      width: 350px;
+      height: 310px;
+      background-image:url(ourphilosophy.png);
+      background-size: cover;
+    }
+    .philosophy{
+      display: flex;
+      width: 60%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      
+    }
+    .philosophy h1{
+      font-size: 25px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+    .philosophy p{
+      display: flex;
+      font-size: 12px;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    .maybe {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      margin-top: 0;
+    }
+
+    .footer_p{
+      display: flex;
+      text-align: center; 
+      color: #fff;
+      font-size: 15px;
+      width: 85%;
+    }
+    .logo_footer{
+    font-size: 4px;
+    }
+    .number h1{
+      margin-top: 0;
+      color: #fff;
+      font-size: 10px;
+    }
+    .polityc p {
+      color: white;
+      font-size: 9px;
+    }
+}
+
+/* Styles for mobile l screens */
+@media only screen and (max-width: 425px) {
+  .footer_text h1{
+    font-size: 25px;
+  }
+  .footer_p{
+    display: flex;
+    text-align: center; 
+    color: #fff;
+    font-size: 15px;
+    width: 85%;
+  }
+  .logo_footer{
+  font-size: 4px;
+  }
+  .number h1{
+    margin-top: 0;
+    color: #fff;
+    font-size: 10px;
+  }
+  .polityc p {
+    color: white;
+    font-size: 9px;
+  }
+  .page4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_page4 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+    }
+    .text_page4 p {
+      display: flex;
+      justify-content: center;
+      width: 80% ;
+      font-size: 12px;
+      margin: 0;
+    }
+    .text_page4 h1 {
+      font-size: 25px;
+    }
+    .img_laptop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .img_laptop img{
+      width: 0;
+      height: 0;
+    }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .page2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    color: #fff;
+  }
+  .img_1 {
+    display: flex;
+    width: 0;
+    height: 0;
+  }
+  .header_text {
+    width: 90%;
+    
+  }
+  .header_button1 button {
+    display: flex;
+    justify-content: center;
+    
+    }
+
+  .text_header {
+    font-size: 25px;
+  }
+
+  .text_p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 1em 2.5em;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .philosophy p{
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn1 {
+    display: flex;
+    font-size: 12px;
+    padding: 1em 2.5em;
+  }
+  .last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #f5f7fa;
+  }
+  .last_text1{
+    color: #3d3d3d;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text2{
+    color: #3d3d3d;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text3{
+    color: #3d3d3d;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter {
+    font-weight: 400;
+    text-align: center;
+    color: #515151;
+    font-size: 20px;
+  }
+  .page5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f7fa;
+    border: 1px solid #d1d1d1;
+  }
+  .founder_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-image:url(founder.jpg);
+    border-radius: 40px;
+    background-size: cover;
+    margin: 0;
+    
+  }
+  .about_founder{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 0;
+  }
+}
+/* Styles for mobile l screens */
+@media only screen and (max-width: 375px) {
+  .number h1{
+    margin-top: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  .polityc p {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer_p{
+    font-size: 11px;
+    text-align: center;
+  }
+  .page4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_page4 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+    }
+    .text_page4 p {
+      display: flex;
+      justify-content: center;
+      width: 80% ;
+      font-size: 12px;
+      margin: 0;
+    }
+    .text_page4 h1 {
+      font-size: 25px;
+    }
+    .img_laptop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .img_laptop img{
+      width: 0;
+      height: 0;
+    }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    color: #fff;
+  }
+
+  .img_1 {
+    display: flex;
+    width: 0;
+    height: 0;
+    background-image:url(ourphilosophy.png);
+    background-size: cover;
+    margin-left: 50px;
+  }
+  .header_text {
+    width: 90%;
+    
+  }
+  .header_button1 button {
+    display: flex;
+    justify-content: center;
+    
+    }
+
+  .text_header {
+    font-size: 25px;
+  }
+
+  .text_p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 1em 2.5em;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .philosophy p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn1 {
+    font-size: 12px;
+    padding: 1em 2.5em;
+  }
+  .last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #f5f7fa;
+  }
+  .last_text1{
+    color: #3d3d3d;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text2{
+    color: #3d3d3d;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text3{
+    color: #3d3d3d;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter {
+    font-weight: 400;
+    text-align: center;
+    color: #515151;
+    font-size: 18px;
+  }
+  .page5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f7fa;
+    border: 1px solid #d1d1d1;
+  }
+  .founder_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-image:url(founder.jpg);
+    border-radius: 40px;
+    background-size: cover;
+    margin:0;
+  }
+  .about_founder{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+/* Styles for mobile m screens */
+@media only screen and (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+  }
+  .text_header {
+    font-size: 22px;
+  }
+
+  .text_p {
+    font-size: 14px;
+  }
+  .page5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f7fa;
+    border: 1px solid #d1d1d1;
+  }
+  .founder_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 240px;
+    background-image:url(founder.jpg);
+    border-radius: 40px;
+    background-size: cover;
+    margin:0;
+  }
+  .about_founder{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 0.8em 2.2em;
+  }
+  .last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #f5f7fa;
+  }
+  .last_text1{
+    color: #3d3d3d;
+    font-size: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text2{
+    color: #3d3d3d;
+    font-size: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_text3{
+    color: #3d3d3d;
+    font-size: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter {
+    font-weight: 400;
+    text-align: center;
+    color: #515151;
+    font-size: 16px;
+  }
+  .philosophy h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer{
+    height: 62vh;
+  }
+  .footer_text h1{
+    font-size: 20px;
+  }
+  .footer_p{
+    text-align: center;
+    display: flex;
+    color: #fff;
+  }
+  .number h1{
+    display: flex;
+  text-align: center;
+    margin:0;
+    color: #fff;
+    font-size: 12px;
+  }
+  .polityc p {
+    
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+}
