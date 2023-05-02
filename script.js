@@ -1,6 +1,6 @@
 "use strict"
 		// Array of words
-		var words = ["Your", "Company", "Is", "The Best", "by IQA Media"];
+		var words = ["Your", "Company", "Is", "The Best", "IQA Media"];
 
 		// Counter variable to keep track of current word
 		var counter = 0;
@@ -128,300 +128,26 @@ $(document).ready(function() {
     });
   });
 });
-// const arr = ["Vlad", "Nikitin", "5492567"];
+const hamburger = document.querySelector('.hamburger'),
+      navMenu = document.querySelector('.nav-menu');
 
-// arr.forEach(function(item, i, arr){
-//     console.log(`${i}: ${item} Данные регистрации ${arr}`);
-// });
-// function first() {
-//     setTimeout(function() {
-//         console.log(1);
-//     },500);
-// }
-// function second() {
-//     console.log(2);
-// }
-// first();
-// second();
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}));
 
-// function learnJS(lang, callback){
-//     console.log(`Я учу: ${lang}`);
-//     callback();
-// }
-// function done() {
-//     console.log(`I skip this`)
-// }
-// learnJS(`JAVA Script`, done);
+document.addEventListener("mousemove", parallax);
+function parallax(e){
+  document.querySelectorAll(".object").forEach(function(move){
 
+    var moving_value = move.getAttribute("data-value");
+    var x = (e.clientX * moving_value) / 250;
+    var y = (e.clientY * moving_value) / 250;
 
-// const options = {
-//     name: 'test',
-//     width: 1024,
-//     height: 1024,
-//     colors: {
-//         border: 'black',
-//         bg: 'red'
-//     },
-//     makeTest: function() {
-//         console.log(`Test`);
-//     }
-// };
-// options.makeTest();
-
-// const {border, bg} = options.colors;
-// console.log(border);
-// console.log(Object.keys(options).length);
-
-// console.log(options.name);
-
-// delete options.name;
-
-// console.log(options); 
-
-// for (let key in options) {
-//     console.log(`свойство ${key} имеет значение ${options[key]}`);
-// }
-
-// const arr = [1, 2, 3, 4, 5];
-// arr.forEach(function(item, i, arr) {
-//     console.log(`${i}: ${item} внутри массива ${arr}`);
-// });
-// arr.pop();
-// arr.push(10);
-// console.log(arr); 
-
-// for (let i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
-// }
-// for (let value of arr) {
-//     console.log(value);
-// } 
-// const str = prompt("", "")
-// const product = str.split(", ");
-// console.log(product);
-
-// let a = 5,
-//     b = a;
-
-//     const obj = {
-//         a:5,
-//         b:1
-//     };
-
-// function copy(mainObj) {
-//     let objCopy = {};
-    
-//     let key;
-//     for (key in mainObj){
-//         objCopy[key] = mainObj[key];
-//     }
-
-//     return objCopy;
-// }
-
-// const numbers = {
-//     a:2,
-//     b:4,
-//     c:{
-//         x:7,
-//         y:4
-//     }
-// };
-
-// const newNumbers = copy(numbers);
-
-// newNumbers.a = 10;
-// newNumbers.c.x = 10;
-
-// console.log(newNumbers);
-// console.log(numbers);
-
-// const add = {
-//     k: 40,
-//     j: 50
-// };
-// console.log(Object.assign(numbers, add));
-
-// const numm = [`1, 5, 6`];
-// console.log(numm)
-
-// const personalPlanPeter = {
-//     name: "Peter",
-//     age: "29",
-//     skills: {
-//         languages: ['ru', 'eng'],
-//         programmingLangs: {
-//             js: '20%',
-//             php: '10%'
-//         },
-//         exp: '1 month'
-//     }
-// };
-
-// function showExperience(plan) {
-//  for(plan in personalPlanPeter) {
-//     console.log(`данные: ${plan}`)
-//  };
-// }
-// showExperience();
-
-
-
-
-// function learnJS(lang, callback) {
-//     console.log(`Я учу ${lang}`);
-//     callback();
-// }
-
-// learnJS(`Java Script`, function(){
-//     console.log(`Я прошел этот урок!`);
-// });
-
-// const personalPlanPeter = {
-//     name: "Peter",
-//     age: "29",
-//     skills: {
-//         languages: ['ru', 'eng'],
-//         programmingLangs: {
-//             js: '20%',
-//             php: '10%'
-//         },
-//         exp: '1 month'
-//     }
-// };
-
-//     function showProgrammingLangs(plan) {
-//     const {age} = plan;
-//     const {languages} = plan.skills;
-//     let str = `Мне ${age}лет и я владею языками: `;
-//     languages.forEach(function(lang) {
-//         str += `${lang.toUpperCase()} `;
-//     });
-//     return str;
-// }
-// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
-
-// const personalPlanPeter = {
-//     name: "Peter",
-//     age: "29",
-//     skills: {
-//         languages: ['ru', 'eng'],
-//         programmingLangs: {
-//             js: '20%',
-//             php: '10%'
-//         },
-//         exp: '1 month'
-//     }
-// };
-
-// function showExperience(plan) {
-//     plan = personalPlanPeter;
-//     const {exp} = plan.skills;
-//     return exp;
-// }
-
-// console.log(exp);
-
-
-// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
-
-// function showFamily(arr) {
-//     let str = '';
-
-//     arr.length === 0 ? str = 'Семья пуста' : str = 'Семья состоит из: ';
-
-//     arr.forEach(member => {
-//         str += `${member} `
-//     });
-
-//     return str;
-// }
-
-// showFamily(family);
-
-// let str = "some";
-// let strObj = new String(str);
-// console.log(typeof(str));
-// console.log(typeof(strObj));
-
-// const auto = {
-//     health: 400,
-//     armor: 100
-// };
-// bmw.__proto__ = auto;
-// Object.setPrototypeOf(bmw, auto);
-// console.log(bmw)
-// const bmw = Object.create(auto);
-
-
-
-
-// const personalMovieDB = {
-//     count: 0,
-//     movies: {},
-//     actors: {},
-//     genres: [],
-//     privat: false,
-//     start: function() {
-//         personalMovieDB.count = +prompt('сколько фильмов вы уже посмотрели?', '')
-    
-//         while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
-//             personalMovieDB.count = +prompt('сколько фильомв вы уже посмотрели?', '');
-//         }
-    
-//     }, 
-//     rememberMyFilms: function() {
-//         for (let i = 0; i < 2; i++) {
-//             const a = prompt('Один из последних просмотренных фильмов?', ''),
-//                   b = prompt('На сколько вы оцениваете его?', '');
-
-//                   if(a != null && b != null && a != '' && b != '' && a.length <50) {
-//                     personalMovieDB.movies[a] = b;
-//                     console.log('done');
-//                 } else {
-//                     console.log('error');
-//                     i--;
-//                 }
-//         }
-//     },
-//     detectPersonalLevel: function() {
-//         if(personalMovieDB.count < 10) {
-//             console.log("Просмотренно довольно мало фильмов");
-//         } else if (personalMovieDB.count >=10 && personalMovieDB.count < 30) {
-//             console.log('вы классный зритель');
-//         } else if (personalMovieDB.count >=30) {
-//             console.log("вы киноман");
-//         }else {
-//             console.log("Error Message");
-//         }
-//     },
-//     showMyDB: function(hidden) {
-//         if(!hidden) {
-//             console.log(personalMovieDB);
-//         }
-//     },
-//     toggleVisibleMyDB: function() {
-//     if (personalMovieDB.privat){
-//         personalMovieDB.privat = false;
-//     }else{
-//         personalMovieDB.privat = true;
-//     }
-
-//     },
-//     writeYourGenres: function() {
-//         for (let i =1; i<=3; i++) {
-//             let genres = prompt(`вашь любимый жанр под номером ${i}`);
-
-//             if (genres == '' || genres == null) {
-//                 console.log('вы ввели некорректные данные или не ввели их вообще'),
-//                 i--;
-//             } else {
-//                 personalMovieDB.genres[i - 1] = genres;
-//             }
-
-//         }
-//         personalMovieDB.genres.forEach((item, i) => {
-//             console.log(`Любимый жанр ${i + 1} - это ${item}`);
-//         });
-//     }
-// };
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
+}
