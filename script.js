@@ -128,6 +128,7 @@ $(document).ready(function() {
     });
   });
 });
+
 const hamburger = document.querySelector('.hamburger'),
       navMenu = document.querySelector('.nav-menu');
 
@@ -151,3 +152,36 @@ function parallax(e){
     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
   });
 }
+
+const modalTrigger = document.querySelectorAll('[data-modal]'),
+      modal = document.querySelector('.modal'),
+      modalCloseBtn = document.querySelector('[data-close]');
+      
+  modalTrigger.forEach(btn => {
+  btn.addEventListener('click', openModal);                       
+  });
+
+function openModal () {
+  modal.classList.add('show');
+  modal.classList.remove('hide');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.add('hide');
+  modal.classList.remove('show');
+  document.body.style.overflow = '';
+}
+modalCloseBtn.addEventListener('click', closeModal);
+
+modal.addEventListener('click', (e) => {
+  if(e.target === modal){
+      closeModal();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+  }
+});
