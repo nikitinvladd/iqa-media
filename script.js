@@ -1,35 +1,4 @@
 "use strict"
-		// Array of words
-		var words = ["Your", "Company", "Is", "The Best", "IQA Media"];
-
-		// Counter variable to keep track of current word
-		var counter = 0;
-
-		function changeWord() {
-			// Get the HTML element with the class "changing-word"
-			var element = document.querySelector(".logo");
-
-			// Fade out the element by changing its opacity to 0
-			element.style.opacity = 0;
-
-			// Wait for the transition to complete before changing the text content
-			setTimeout(function() {
-				// Set the text of the HTML element to the current word
-				element.innerHTML = words[counter];
-
-				// Fade in the element by changing its opacity to 1
-				element.style.opacity = 1;
-
-				// Increment the counter variable and reset it to 0 if it reaches the end of the array
-				counter++;
-				if (counter >= words.length) {
-					counter = 0;
-				}
-			}, 500); // Wait for 0.5 seconds before changing the text content
-		}
-
-		// Call the changeWord function every 2 seconds using setInterval
-		setInterval(changeWord, 2000);
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
