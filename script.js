@@ -1,78 +1,44 @@
 "use strict"
-function onEntry(entry) {
-  entry.forEach(change => {
-    if (change.isIntersecting) {
-      change.target.classList.add('element-show');
+ function observeElements(selector, className) {
+      const onEntry = (entry) => {
+        entry.forEach(change => {
+          if (change.isIntersecting) {
+            change.target.classList.add(className);
+          }
+        });
+      };
+    
+      const options = { threshold: [0.5] };
+      const observer = new IntersectionObserver(onEntry, options);
+      const elements = document.querySelectorAll(selector);
+    
+      elements.forEach((elm) => observer.observe(elm));
     }
-  });
-}
-let options = { threshold: [0.5] };
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.page2');
-for (let elm of elements) {
-  observer.observe(elm);
-}
-function onEntry(entry) {
-  entry.forEach(change => {
-    if (change.isIntersecting) {
-      change.target.classList.add('element-show');
-    }
-  });
-}
-let optionss = { threshold: [0.5] };
-let observerr = new IntersectionObserver(onEntry, options);
-let elementss = document.querySelectorAll('.img_partners');
-for (let elm of elementss) {
-  observerr.observe(elm);
-}
-function onEntry(entry) {
-  entry.forEach(change => {
-    if (change.isIntersecting) {
-      change.target.classList.add('element-show');
-    }
-  });
-}
-let optionsss = { threshold: [0.5] };
-let observerrr = new IntersectionObserver(onEntry, options);
-let elementsss = document.querySelectorAll('.medium');
-for (let elm of elementsss) {
-  observerrr.observe(elm);
-}
-
-
-const counters = document.querySelectorAll('.value');
-const speed = 200;
-
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('akhi');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
+    
+    observeElements('.page2', 'element-show');
+    observeElements('.img_partners', 'element-show');
+    observeElements('.medium', 'element-show');
+    observeElements('.page5', 'element-show');
+    
+    const counters = document.querySelectorAll('.value');
+    const speed = 200;
+    
+    counters.forEach(counter => {
+      const animate = () => {
+        const value = +counter.getAttribute('akhi');
+        const data = +counter.innerText;
+    
+        const time = value / speed;
+        if (data < value) {
           counter.innerText = Math.ceil(data + time);
           setTimeout(animate, 1);
-        }else{
+        } else {
           counter.innerText = value;
         }
-     
-   }
-   
-   animate();
-});
-function onEntry(entry) {
-  entry.forEach(change => {
-    if (change.isIntersecting) {
-      change.target.classList.add('element-show');
-    }
-  });
-}
-let optionsy = { threshold: [0.5] };
-let observery = new IntersectionObserver(onEntry, optionsy);
-let elementsy = document.querySelectorAll('.page5');
-for (let elm of elementsy) {
-  observery.observe(elm);
-}
+      }
+    
+      animate();
+    });
 
 $(document).ready(function() {
   $(window).scroll(function() {
